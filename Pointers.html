@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pointers</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flaming.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+    <h2 class="logo"><img src="logo.jpg" height="70" width="100"></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="learn.html">learn</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            
+            </ul>
+        </nav>
+ <div class="coursename">
+<h1 >C++ Course</h1>
+</div>
+    </div>
+</header>
+<div class="flex">
+<div class="list" align="left">
+     <div class="listhead">
+     <ul style="list-style-type:none;">
+        <span > <li >Basics</li></span>
+     </ul>
+     </div>
+ 
+    <ul style="list-style-type:none;">
+   <a href="Syntax.html"><li>Syntax</li></a>
+   <a href="Output.html"><li>Output</li></a>
+   <a href="Comments.html"><li>Comments</li></a>
+   <a href="Variables.html"><li>Variables</li></a>
+   <a href="User%20Input.html"><li>User Input</li></a>
+   <a href="Data%20Types.html"><li>Data Types</li></a>
+   <a href="Operators.html"><li>Operators</li></a>
+   <a href="Strings.html"><li>Strings</li></a>
+   <a href="Math.html"><li>Math</li></a>
+   <a href="Booleans.html"><li>Booleans</li></a>
+   <a href="Conditions.html"><li>Conditions</li></a>
+   <a href="Switch.html"><li>Switch</li></a>
+   <a href="While%20Loop.html"><li>While Loop</li>    </a>
+   <a href="For%20Loop.html"><li>For Loop</li></a>
+   <a href="BreakContinue.html"><li>Break/Continue</li></a>
+   <a href="Arrays.html"><li>Arrays</li></a>
+   <a href="Refrences.html"><li>Refrences</li></a>
+   <a href="Pointers.html"><li>Pointers</li></a>
+</ul>
+</div>
+<div class="design">
+  <h1>Pointers</h1>
+  <h2>Creating Pointers</h2>
+  <p>You learned from the previous chapter, that we can get the memory address of a variable by using the & operator:</p>
+  <div class="exampleback">
+    <h2>Example</h2>
+  <div class="example">
+    <p>
+string food = "Pizza"; // A food variable of type string<br>
+cout << food << "\n";  // Outputs the value of food (Pizza)<br>
+cout << &food << "\n"; // Outputs the memory address of food (0x6dfed4)</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>Pizza<br>
+      0x6dfed4
+    </p>
+  </div>
+</div>
+<p>
+  A <span>pointer</span> however, is a variable that stores the memory address as its value.
+</p>
+<p>
+  A <span>pointer</span> variable points to a data type (like int or string) of the same type, and is created with the * operator. The address of the variable you're working with is assigned to the pointer:
+</p>
+<div class="exampleback">
+    <h2>Example</h2>
+  <div class="example">
+    <p>string food = "Pizza";  // A food variable of type string<br>
+string* ptr = &food;    // A pointer variable, with the name ptr, that stores the<br> address of food<br>
+// Output the value of food (Pizza)<br>
+cout << food << "\n";<br>
+// Output the memory address of food (0x6dfed4)<br>
+cout << &food << "\n";<br>
+// Output the memory address of food with the pointer (0x6dfed4)<br>
+cout << ptr << "\n";</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>Pizza<br>
+0x6dfed4<br>
+0x6dfed4</p>
+  </div>
+</div>
+<h3>Explaining</h3>
+<p>Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're working with.</p>
+<p>Use the & operator to store the memory address of the variable called food, and assign it to the pointer.
+</p>
+<p>Now, ptr holds the value of food's memory address.</p>
+<p><span>Note:</span> There are three ways to declare pointer variables, but the first way is preferred:</p>
+<div class="example"><p>string* mystring; // Preferred<br>
+string *mystring;<br>
+string * mystring;</p></div>
+<h2>Dereference</h2>
+<h3>Get Memory Address and Value</h3>
+<p>In the example from the previous page, we used the pointer variable to get the memory address of a variable (used together with the & reference operator). However, you can also use the pointer to get the value of the variable, by using the * operator (the dereference operator):</p>
+<div class="exampleback">
+    <h2>Example</h2>
+  <div class="example">
+    <p>string food = "Pizza";  // Variable declaration<br>
+string* ptr = &food;    // Pointer declaration<br>
+// Reference: Output the memory address of food with the pointer (0x6dfed4)<br>
+cout << ptr << "\n";<br>
+// Dereference: Output the value of food with the pointer (Pizza)<br>
+cout << *ptr << "\n";
+</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>0x6dfed4<br>
+Pizza</p>
+  </div>
+</div>
+<p><span>Note:</span> that the * sign can be confusing here, as it does two different things in our code:</p>
+<p>
+  When used in declaration (string* ptr), it creates a pointer variable.
+  When not used in declaration, it act as a dereference operator.
+</p>
+<h2>Modify Pointers</h2>
+<h3>Modify the Pointer Value</h3>
+<p>You can also change the pointer's value. But note that this will also change the value of the original variable:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string food = "Pizza";
+string* ptr = &food;
+
+// Output the value of food (Pizza)<br>
+cout << food << "\n";<br>
+// Output the memory address of food (0x6dfed4)<br>
+cout << &food << "\n";<br>
+// Access the memory address of food and output its value (Pizza)<br>
+cout << *ptr << "\n";<br>
+// Change the value of the pointer<br>
+*ptr = "Hamburger";<br>
+// Output the new value of the pointer (Hamburger)<br>
+cout << *ptr << "\n";<br>
+// Output the new value of the food variable (Hamburger)<br>
+cout << food << "\n";</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>Pizza<br>
+0x6dfed4<br>
+Pizza<br>
+Hamburger<br>
+Hamburger</p>
+</div>
+</div>
+
+<div class="pbutton">
+ <button ><a href="Refrences.html">Previous</a></button></div>
+</div>
+</div>
+<footer>
+    <TR>
+      <TD CELLPADDING="10">
+        <B><MARQUEE DIRECTION="right" SCROLLAMOUNT="5"><FONT COLOR="#FFE863" SIZE="2">
+Copyright&copy;2020 FlamingBrain.
+</FONT></MARQUEE>
+      </TD>
+    </TR>
+<div>
+    <div class="border2"></div>
+    <div class="border1"></div>
+    <div> 
+<h3 > <ul class="sitemap">
+ <strong>Sitemap</strong>
+ <li ><a href="index.html"class="class1"><h3 class="linkcolor">Home</h3></a> </li> 
+<li><a href="learn.html"class="class1"><h3 class="linkcolor">Learn </h3></a> </li> 
+<li><a href="about.html"class="class1"><h3 class="linkcolor"> About </h3></a> </li> 
+</ul>
+</h3>
+</div>
+<div> 
+<h3 > <ul class="contactus">
+<strong>Contact Us</strong>
+<li > phone Number:011109222433</li> 
+<li>Email address:<a href="https://mail.google.com" ></a> <h3 class="linkcolor"> BrainFlamin@gmail.com </h3></li> 
+ </ul>
+</h3>
+</div>
+<div> 
+<h3 class="aboutus"> 
+<strong>About Us</strong>
+<p>  Flaming Brain is <br> 
+a web Devolpers site Provides<br>
+Programing languges courses for free.
+</p>
+</ul>
+</h3>
+</div>
+</div>
+</footer>
+</body>
+</html>

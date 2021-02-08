@@ -1,0 +1,520 @@
+
+/*home*/
+*{
+    padding:0; 
+    margin:0; border:0px;
+    text-decoration:none ;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+/*list head name , title name, felx box div, course name h1 */
+/*navigation*/
+.navbar{
+     margin-bottom: 0px;  border:0px;
+    width:100%;
+    background-color: #0D0635;
+    font-family: monospace;
+    height:95px;
+}
+.logo{
+    color: white; padding-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    float: left;
+   
+}
+.navbar ul{
+    padding-left:12px ;
+    padding-top:7px ;
+}
+.navbar ul li {
+    display: inline;
+    float:left;
+    margin: 30px 10px 10px 10px;
+    font-family: fantasy;
+    font-size: large;
+    
+    
+}
+.navbar ul li a{
+    color: #0D0635; background-color:#CBCBCD ;
+    border-radius: 5px;
+    padding:7px 11px;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    background: rgb(255, 232, 99);
+    transition: .5s;
+}
+.navbar ul li a:active{
+    background: red;
+    transition: .5s;
+}
+/*home's body*/
+.content img{
+  width:500px;
+  height:437px;
+  /*width:50%;
+  height:100%;*/
+  padding-left:0px;
+}
+.text1{
+  float:right;
+  padding-right:30px;
+}
+
+.text1 a{
+   color: #0D0635; background-color:#CBCBCD ;
+    border-radius: 5px;
+    padding:2px 11px;
+    text-transform: uppercase;
+}
+
+.search{
+text-align: left; padding-left: 800px; background-color: rgba(13,6,53,1); color: #0D0635;
+font-size: 20px;margin-top: 0px;
+    text-align: left; color:rgb(255, 232, 69); 
+ border-collapse: collapse; border: 5px solid #CBCBCD; 
+padding-bottom: 0px; 
+}
+ul.a {
+  list-style-position: outside;
+}
+/*lessons' list*/
+.list{ 
+
+    padding: 0px 10px 30px 0px; border-spacing:0; 
+    margin:0px  0px 20px 0px;  border: 1px solid rgba(13,6,53,1);
+    font-weight: normal; 
+    text-align: left;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse; background-color:  #0D0635;
+    width: 20%;
+}
+.list ul, .list li{
+    padding: 8px;
+}
+.list li{
+    margin-left: 0px;
+     padding-top: 8px;border: 3px solid rgba(13,6,53,1); 
+     padding-right: 80px; border-radius: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #CBCBCD;
+  color: #0D0635; font-family: Arial, Helvetica, sans-serif;
+  }
+.listhead{
+margin-bottom: 20px;  margin-top: 5px;
+ font-size: 20px; font-family: Arial, Helvetica, sans-serif; 
+ font-weight: bold; 
+}
+.listhead span li{
+	 margin-left: 0px;
+     padding-top: 8px;border: 3px solid rgba(13,6,53,1); padding-right: 80px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #585858;
+  color: #CBCBCD; font-family: Arial, Helvetica, sans-serif;
+}
+.list  ul li:hover{
+     background: rgb(255, 232, 99);
+    transition: .5s;
+}
+.list  ul li:active{
+    background: red;
+    transition: .5s;
+}
+.list  ul li:visited{
+    background: rgb(255, 232, 69,0.5);
+     transition: .3s;
+}
+body{
+	background-color: #0D0635; 
+width:100%;
+min-width:750px;
+}
+/*course name header in every lesson*/
+.coursename{margin-top: 0px; text-shadow:10px 7px 10px black;
+    text-align: left; padding-left: 550px; font-size: 35px; color:rgb(255, 232, 99); 
+ border-collapse: collapse; 
+padding-bottom: 13px; }
+.coursename h1{ ; 
+}
+.coursename h1  a{
+	color:rgb(255, 232, 99);
+}.border{
+	border:3px solid #0D0635; margin-left:4px; border-right-width: 0px; border-top-width:0px
+}
+/*most used design for content*/
+.design{  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: left; margin-top: 0px; padding-top: 0px; 
+    padding-left: 10px; width: 100%;
+color:#0D0635; 
+}
+.design h1{ border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+    margin-top: 0px; color:#0D0635;
+	text-shadow: 4px 3px 10px rgb(255, 232, 99); margin-left: 10px; padding-left: 3px;
+    text-align: left; width: 100%; font-size: 55px; margin-right: 0px;
+    background-color: #0D0635;
+    background-image: linear-gradient(to right,#CBCBCD,#0D0635);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border: 2px solid #0D0635; border-left-width:0px 
+}
+.design h2{ color: #F1F1F1F1; padding: 5px 3px; 
+  border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+text-align: left; width: 100%; font-size: 35px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+margin-left: 10px;
+}
+.design h3{ border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+   color: #0D0635; padding: 5px 3px;  margin-left: 10px;
+text-align: left; width: 100%; font-size: 25px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ background-image: linear-gradient(to right,#CBCBCD,#0D0635);
+ border-bottom:5px solid #0D0635;border-top:5px solid #0D0635;
+}
+.design p{ margin: 0px 0px 1px 10px; padding: 15px;  color:#0D0635; margin-right: 0px;
+ border-right-width: 6px;        
+text-align: left; font-size: 20px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+background: #CBCBCD;  ;color:#0D0635;
+border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+
+.design ul{ 
+margin: 0px 0px 1px 10px; padding: 5px;
+text-align: left; font-size: 20px; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+background: #CBCBCD;  ;color:#0D0635;
+border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.design ul li{list-style-type: circle;
+  margin: 0px 0px 1px 32px; padding: 5px; 
+text-align: left; font-size: 20px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+background: #CBCBCD;  ;color:#0D0635;
+}
+.design ol{
+margin: 0px 0px 1px 10px; padding: 5px;
+text-align: left; font-size: 20px; 
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+background: #CBCBCD;  ;color:#0D0635; 
+border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+}
+.design ol li{
+  margin: 0px 0px 1px 34px; padding: 5px; list-style-type: decimal;
+text-align: left; font-size: 20px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+background: #CBCBCD;  ;color:#0D0635;
+}
+.design span{text-decoration: underline; font-weight: bold; color: #A00000;}
+.design table { border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+  color: #0D0635; background-color: #FFE863;
+  border-collapse: collapse;
+  width: 100%; margin-left: 10px;
+ border-right-width: 6px; font-family: Arial, Helvetica, sans-serif;
+border-right: 2px solid #6A6A6A;
+}
+
+.design td, th {
+  border: 1px solid #0D0635;  border-top:0px; border-right: 0px; 
+  text-align: left;
+  border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+  padding: 8px; font-family: Arial, Helvetica, sans-serif;
+}
+
+.design tr:nth-child(even) {
+  background-color: #CBCBCD;
+}
+.flex { min-width: 750px;
+	border:2px solid #6A6A6A;
+  display: flex; margin:0px; padding: 0px;
+}
+.flex > div {
+  margin:0px; padding: 0px; padding-bottom: 20px;
+}
+.GetStarted{ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+font-weight: bold; text-decoration: underline; }
+/*examples' classes*/
+.exampleback{ margin-left: 0px;
+	width: 100%; background:  #0D0635; color:#CBCBCD;
+	padding-bottom: 20px; padding-right: 0px; 
+}
+.exampleback h2{ margin-left: 0px;
+	margin-right: 0px;
+	width: 100%; background:  #0D0635; color:#CBCBCD; padding-right: 0px; padding-left: 8px;
+	  background-image: linear-gradient(to left,#CBCBCD,#0D0635);
+   margin-right: 0px;
+ border-right-width: 6px;        
+
+}
+.exampleback h3{ margin-left: 0px;
+	margin-right: 0px;
+  width: 100%; background:  #0D0635; color:#CBCBCD;
+   padding-right: 0px; padding-left: 8px;   
+    margin-right: 0px;
+ border-right-width: 6px;        
+
+}
+/*example body(c++ code*/
+.example{
+	width: 100%; padding:15px 0px; margin-left: 10px;
+}
+.example p{ margin-left: 0px;  
+	width: 100%; background:rgb(255, 232, 99); color:#0D0635; margin-right: 0px;
+	margin-left: 0px;  border: 1px solid #0D0635; border-right-width: 9px;
+border-radius: 8px;border-top-right-radius: 0px; border-bottom-right-radius: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+/*example output*/
+.exoutput{
+ width: 100%; padding:15px 5px; margin-left: 4px;
+}
+.exoutput h2{ 
+width: 100%; background:  #0D0635; color:#CBCBCD; padding:15px 0px;
+	  background-image: linear-gradient(to left,#CBCBCD,#0D0635);
+font-size: 1.5em; margin-left: 0px;
+}
+.exoutput p{ margin-left: 0px;
+background-color: #CBCBCD;  color:#0D0635; margin-top: 10px; 
+margin-bottom: 10px; 
+}
+/*border for tables*/
+.tb{border-right:7px solid #0D0635;}
+/*buttons designing*/
+.button {
+  margin-left: 625px; margin-top: 10px;
+  border: none;
+  color: #0D0635;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+.button button a{background-color: rgb(255, 232, 99);color:#0D0635; padding:10px 50px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 1.5em;
+}
+button a:hover{
+	background:#CBCBCD; transition: 0.5s;
+}
+.pbutton{
+  margin-left: 15px; margin-top: 10px;
+  border: none;
+  color: #0D0635;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+.pbutton button a{background-color: rgb(255, 232, 99);color:#0D0635; padding:10px 35px ;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 1.5em;
+}
+button a:hover{
+  background:#CBCBCD;  transition: 0.5s;
+}
+#sbold {font-weight: bold; text-decoration: none; }
+/*learn page*/
+.learn{
+  width: 650px; height: 400px;
+  padding: 2px 15px; margin: 25px 20px; background-color: #FFE863;
+}
+.learn p{
+  margin-top: 30px;margin-left: 243px;
+  background-color: #FFE863; color: #0D0635; 
+   text-decoration: none;padding: 0px; 
+}
+.learn p a{font-weight: bold;color: #0D0635; font-size: 1.6em;  }
+.learn img{border: 3px solid #0D0635; border-radius: 15px;}
+.learnflex {
+  min-width: 750px;
+  display:flex; margin:0px; padding: 0px;
+}
+.learnflex > div {
+  border-radius: 15px;
+  margin:5px 17px 5px 10px; padding: 10px 0px 20px 7px; width: 800px;
+}
+/* 
+3shan ast3ml code between< > as 
+a text: Replace < with &lt; and > with &gt;
+*/
+
+.about{margin:0px 250px 30px;}
+
+footer{background-color:#2e3d57;
+height: 200px ;margin-bottom: 0px; 
+margin-top: 10px;  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;padding-bottom: 250px;
+}
+.border1{ border-top: 2px solid grey;  }
+
+
+
+
+
+ 
+
+.linkcolor{color: #cbcbcd;
+text-decoration: underline;
+}
+
+.sitemap{position: absolute;
+  margin:50px 150px 30px;
+
+
+}
+.contactus{position: absolute;
+ margin:30px 550px 30px;
+
+padding-top: 10px;
+}
+
+.aboutus{position: absolute ;
+ margin:40px 0px 0px 1000px;
+ 
+}
+/*home slider*/
+.boximg{border: 20px  solid  #ffe845; 
+
+height: 430px;
+border-radius: 15px;
+
+
+}
+
+
+#slider {
+  overflow: hidden;
+
+
+
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+
+
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+position: relative;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.imgg{height:400px;
+
+width:1000px; 
+
+}
+ .h11{color: white;
+  margin-top: 40px;
+  margin-left:40px;
+
+
+ }
+
+
+.our{background-image: url(school-4958118_1920.jpg); 
+height: 400px;
+width: 1350px;
+
+
+}
+.our h2 {padding-top: 90px;
+
+
+}
+.ulw{color: white;
+font-size:150%;
+padding-bottom: 300px;
+}
+/*signup*/
+.signup{
+padding-left:40%;
+padding-right:40%;
+padding-top: 70px;
+padding-bottom: 140px;
+}
+.signup input{
+  margin: 5px;
+}
+input[type=submit]{
+  background-color: #CBCBCD;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text]{
+ padding: 10px;
+ border: #0D0635;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.signup label{
+  color:black;
+}
+/*contact us*/
+.contact-box {
+  width: 300px;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 320px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 40px;
+  background-color:rgb(255, 232, 99);
+  border: 1px solid #eaf0f6;
+  position :relative;
+  border-radius: 10px;
+}
+.contact-box img{
+  height: 50px;
+  width: 50px;
+}
+.contact-box a{
+  color: #0D0635; background-color:#CBCBCD ;
+  border-radius: 5px;
+  padding:7px 11px;
+  text-transform: uppercase;
+}
+/*javascript form*/
+.mail{}

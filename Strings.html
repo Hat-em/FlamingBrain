@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Strings</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flaming.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+       <h2 class="logo"><img src="logo.jpg" height="70" width="100"></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="learn.html">learn</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            
+            </ul>
+        </nav>
+ <div class="coursename">
+<h1 >C++ Course</h1>
+</div>
+    </div>
+</header>
+<div class="flex">
+<div class="list" align="left">
+     <div class="listhead">
+     <ul style="list-style-type:none;">
+        <span > <li >Basics</li></span>
+     </ul>
+     </div>
+ 
+    <ul style="list-style-type:none;">
+  <a href="Syntax.html"><li>Syntax</li></a>
+   <a href="Output.html"><li>Output</li></a>
+   <a href="Comments.html"><li>Comments</li></a>
+   <a href="Variables.html"><li>Variables</li></a>
+   <a href="User%20Input.html"><li>User Input</li></a>
+   <a href="Data%20Types.html"><li>Data Types</li></a>
+   <a href="Operators.html"><li>Operators</li></a>
+   <a href="Strings.html"><li>Strings</li></a>
+   <a href="Math.html"><li>Math</li></a>
+   <a href="Booleans.html"><li>Booleans</li></a>
+   <a href="Conditions.html"><li>Conditions</li></a>
+   <a href="Switch.html"><li>Switch</li></a>
+   <a href="While%20Loop.html"><li>While Loop</li>    </a>
+   <a href="For%20Loop.html"><li>For Loop</li></a>
+   <a href="BreakContinue.html"><li>Break/Continue</li></a>
+   <a href="Arrays.html"><li>Arrays</li></a>
+   <a href="Refrences.html"><li>Refrences</li></a>
+   <a href="Pointers.html"><li>Pointers</li></a>
+</ul>
+</div>
+<div class="design">
+	<<h1>Strings</h1>
+<p>To use strings, you must include an additional header file in the source code, the <string> library. </p>
+	<p>
+The string type is used to store a sequence of characters (text). This is not a built-in type, but it behaves like one in its most basic usage. String values must be surrounded by double quotes:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p>  // Include the string library <br>
+#include&lt;string>&gt; <br>
+// Create a string variable <br>
+string greeting = "Hello"; <br>
+// Output string value <br>
+cout << greeting;</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>Hello</p>
+  </div>
+</div>
+  <h2>String Concatenation</h2>
+  <p>The + operator can be used between strings to add them together to make a new string. This is called concatenation:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p>
+string firstName = "John "; <br>
+string lastName = "Doe"; <br>
+string fullName = firstName + lastName; <br>
+cout << fullName;</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>John Doe</p>
+  </div>
+</div>
+<p>In the example above, we added a space after firstName to create a space between John and Doe on output.</p>
+<p>However, you could also add a space with quotes (" " or ' '):</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> string firstName = "John"; <br>
+string lastName = "Doe"; <br>
+string fullName = firstName + " " + lastName; <br>
+cout << fullName;
+</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>Hello</p>
+  </div>
+</div>
+<h3>Append</h3>
+<p>A string in C++ is actually an object, which contain functions that can perform certain operations on strings.</p>
+<p>For example, you can also concatenate strings with the <span>append()</span> function:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p>  string firstName = "John ";<br>
+string lastName = "Doe";<br>
+string fullName = firstName.append(lastName);<br>
+cout << fullName;
+</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>John Doe</p>
+  </div>
+</div>
+<p>It is up to you whether you want to use + or append().</p><p> The major difference between the two, is that the append() function is much faster. However, for testing and such, it might be easier to just use +.</p>
+<h2>Numbers and Strings</h2>
+<h3>Adding Numbers and Strings</h3>
+<span>Note:</span>
+<p>C++ uses the + operator for both addition and concatenation.</p>
+<p>
+Numbers are added. Strings are concatenated.</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+int x = 10; <br>
+int y = 20; <br>
+int z = x + y;      // z will be 30 (an integer)
+</p>
+  </div>
+</div>
+<p>If you add two strings, the result will be a string concatenation:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string x = "10"; <br>
+string y = "20"; <br>
+string z = x + y;   // z will be 1020 (a string)
+</p>
+  </div>
+</div>
+<p>If you try to add a number to a string, an error occurs.</p>
+<h2>String Length</h2>
+<p>To get the length of a string, use the <span>length()</span> function:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+cout << "The length of the txt string is: " << txt.length();
+</p>
+  </div>
+  <div class="exoutput">
+  	<h2>Output:</h2>
+  	<p>The length of the txt string is: 26</p>
+  </div>
+</div>
+<p><span>Note:</span> You might see some C++ programs that use the size() function to get the length of a string. This is just an alias of length().</p>
+<p> It is completely up to you if you want to use length() or size().</p>
+<h2>Access Strings</h2>
+<p>You can access the characters in a string by referring to its index number inside square brackets [].</p>
+<p>This example prints the first character in myString:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string myString = "Hello"; <br>
+cout << myString[0];<br>
+// Outputs H
+  </div>
+</div>
+<p><span>Note:</span> String indexes start with 0: [0] is the first character. [1] is the second character, etc.</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string myString = "Hello"; <br>
+cout << myString[1];<br>
+// Outputs e
+  </div>
+</div>
+<h3>Change String Characters</h3>
+<p>To change the value of a specific character in a string, refer to the index number, and use single quotes:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string myString = "Hello"; <br>
+myString[0] = 'J';<br>
+cout << myString;<br>
+// Outputs Jello instead of Hello
+  </div>
+</div>
+<h2>User Input Strings</h2>
+<p>It is possible to use the extraction operator <span id="sbold">></span> on <span id="sbold">cin</span> to display a string entered by a user:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string firstName;<br>
+cout << "Type your first name: ";<br>
+cin >> firstName; // get user input from the keyboard<br>
+cout << "Your name is: " << firstName;<br>
+// Type your first name: John<br>
+// Your name is: John
+  </div>
+</div>
+<p>However, cin considers a space (whitespace, tabs, etc) as a terminating character, which means that it can only display a single word (even if you type many words):</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+string fullName;<br>
+cout << "Type your full name: ";<br>
+cin >> fullName;<br>
+cout << "Your name is: " << fullName;<br>
+// Type your full name: John Doe<br>
+// Your name is: John<br>
+  </div>
+</div>
+<p>From the example above, you would expect the program to print "John Doe", but it only prints "John".</p>
+<p>That's why, when working with strings, we often use the getline() function to read a line of text. It takes cin as the first parameter, and the string variable as second:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p> 
+cout << "Type your full name: ";<br>
+getline (cin, fullName);<br>
+cout << "Your name is: " << fullName;<br>
+// Type your full name: John Doe<br>
+// Your name is: John Doe<br>
+  </div>
+</div>
+<div class="pbutton">
+ <button ><a href="Operators.html">Previous</a></button></div>
+<div class="button">
+ <button ><a href="Math.html">Next</a></button></div>
+</div>
+</div>
+<footer>
+    <TR>
+      <TD CELLPADDING="10">
+        <B><MARQUEE DIRECTION="right" SCROLLAMOUNT="5"><FONT COLOR="#FFE863" SIZE="2">
+Copyright&copy;2020 FlamingBrain.
+</FONT></MARQUEE>
+      </TD>
+    </TR>
+<div>
+    <div class="border2"></div>
+    <div class="border1"></div>
+    <div> 
+<h3 > <ul class="sitemap">
+ <strong>Sitemap</strong>
+ <li ><a href="index.html"class="class1"><h3 class="linkcolor">Home</h3></a> </li> 
+<li><a href="learn.html"class="class1"><h3 class="linkcolor">Learn </h3></a> </li> 
+<li><a href="about.html"class="class1"><h3 class="linkcolor"> About </h3></a> </li> 
+</ul>
+</h3>
+</div>
+<div> 
+<h3 > <ul class="contactus">
+<strong>Contact Us</strong>
+<li > phone Number:011109222433</li> 
+<li>Email address:<a href="https://mail.google.com" ></a> <h3 class="linkcolor"> BrainFlamin@gmail.com </h3></li> 
+ </ul>
+</h3>
+</div>
+<div> 
+<h3 class="aboutus"> 
+<strong>About Us</strong>
+<p>  Flaming Brain is <br> 
+a web Devolpers site Provides<br>
+Programing languges courses for free.
+</p>
+</ul>
+</h3>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Types</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flaming.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+       <h2 class="logo"><img src="logo.jpg" height="70" width="100"></h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="learn.html">learn</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            
+            </ul>
+        </nav>
+ <div class="coursename">
+<h1 >C++ Course</h1>
+</div>
+    </div>
+</header>
+<div class="flex">
+<div class="list" align="left">
+     <div class="listhead">
+     <ul style="list-style-type:none;">
+        <span > <li >Basics</li></span>
+     </ul>
+     </div>
+ 
+    <ul style="list-style-type:none;">
+   <a href="Syntax.html"><li>Syntax</li></a>
+   <a href="Output.html"><li>Output</li></a>
+   <a href="Comments.html"><li>Comments</li></a>
+   <a href="Variables.html"><li>Variables</li></a>
+   <a href="User%20Input.html"><li>User Input</li></a>
+   <a href="Data%20Types.html"><li>Data Types</li></a>
+   <a href="Operators.html"><li>Operators</li></a>
+   <a href="Strings.html"><li>Strings</li></a>
+   <a href="Math.html"><li>Math</li></a>
+   <a href="Booleans.html"><li>Booleans</li></a>
+   <a href="Conditions.html"><li>Conditions</li></a>
+   <a href="Switch.html"><li>Switch</li></a>
+   <a href="While%20Loop.html"><li>While Loop</li>    </a>
+   <a href="For%20Loop.html"><li>For Loop</li></a>
+   <a href="BreakContinue.html"><li>Break/Continue</li></a>
+   <a href="Arrays.html"><li>Arrays</li></a>
+   <a href="Refrences.html"><li>Refrences</li></a>
+   <a href="Pointers.html"><li>Pointers</li></a>
+</ul>
+</div>
+<div class="design">
+  <h1>Data Types</h1>
+  <p>As explained in the <a href="Variables.html"><span>Variables</span></a> chapter, a variable in C++ must be a specified data type:</p>
+  <div class="exampleback">
+    <h2>Example</h2>
+    <div class="example">
+      <p>
+int myNum = 5;               // Integer (whole number) <br>
+float myFloatNum = 5.99;     // Floating point number <br>
+double myDoubleNum = 9.98;   // Floating point number <br>
+char myLetter = 'D';         // Character <br>
+bool myBoolean = true;       // Boolean <br>
+string myText = "Hello";     // String <br>
+      </p>
+    </div>
+      <div class="exoutput">
+        <h2>Output:</h2>
+        <p>int: 5
+float: 5.99
+double: 9.98
+char: D
+bool: 1
+string: Hello</p>
+      </div>
+    
+  </div>
+  <h2>Basic Data Types</h2>
+  <p>The data type specifies the size and type of information the variable will store:</p>
+  <div class="tb">
+  <table>
+  <tr>
+    <th>Data Type</th>
+    <th>Size</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>4 Bytes</td>
+    <td>Stores whole numbers, without decimals</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>4 Bytes</td>
+    <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits</td>
+  </tr>
+  <tr>
+    <td>double</td>
+    <td>8 Bytes</td>
+    <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>1 Byte</td>
+    <td>Stores true or false values</td>
+  </tr>
+  <tr>
+    <td>char</td>
+    <td>1 Byte</td>
+    <td>Stores a single character/letter/number, or ASCII values</td>
+  </tr>
+</table></div>
+<h2>C++ Numeric Data Types</h2>
+<h3>Numeric Types</h3>
+<p>Use int when you need to store a whole number without decimals, like 35 or 1000, and float or double when you need a floating point number (with decimals), like 9.99 or 3.14515.</p>
+<div class="exampleback">
+  <h2>example</h2>
+  <h3>int</h3>
+  <div class="example">
+    <p>int myNum = 1000; <br>
+cout << myNum;</p>
+  </div>
+  <div class="exoutput">
+    <h2>output</h2>
+    <p>1000</p>
+  </div>
+  <h3>float</h3>
+  <div class="example">
+    <p>float myNum = 5.75; <br>
+cout << myNum;</p>
+  </div>
+  <div class="exoutput">
+    <h2>output</h2>
+    <p>5.75</p>
+  </div>
+  <h3>double</h3>
+  <div class="example">
+    <p>double myNum = 19.99; <br>
+cout << myNum;</p>
+  </div>
+  <div class="exoutput">
+    <h2>output</h2>
+    <p>19.99</p>
+  </div>
+</div>
+<h3>difference between <span>float</span> and <span>double</span></h3>
+<p>The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. Therefore it is safer to use double for most calculations.</p>
+<h3>Scientific Numbers</h3>
+<p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+    <p>float f1 = 35e3; <br>
+double d1 = 12E4; <br>
+cout << f1 << "\n"; <br>
+cout << d1;</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>35000 <br>
+120000</p>
+  </div>
+</div>
+<h2>C++ Boolean Data Types</h2>
+<h3>Boolean Types</h3>
+<p>A boolean data type is declared with the bool keyword and can only take the values true or false. When the value is returned, true = 1 and false = 0.</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+    <p>bool isCodingFun = true; <br>
+bool isFishTasty = false; <br>
+cout << isCodingFun << "\n";  // Outputs 1 (true) <br>
+cout << isFishTasty;  &emsp;  // Outputs 0 (false)</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>1 <br>
+    0</p>
+  </div>
+</div>
+<p>Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.</p>
+<h2>C++ Character Data Types</h2>
+<p>The <span>char</span> data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+    <p>char myGrade = 'B';
+cout << myGrade;</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>B</p>
+  </div>
+  <p>Alternatively, you can use ASCII values to display certain characters:</p>
+  <h2>Example</h2>
+  <div class="example">
+    <p>char a = 65, b = 66, c = 67; <br>
+cout << a; <br>
+cout << b; <br>
+cout << c;</p>
+  </div>
+  <div class="exoutput">
+<h2>Output:</h2>
+    <p>ABC</p>
+  
+</div>
+</div>
+<h2>Strings</h2>
+<p>To use strings, you must include an additional header file in the source code, the <string> library.</p>
+  <p>
+The string type is used to store a sequence of characters (text). This is not a built-in type, but it behaves like one in its most basic usage. String values must be surrounded by double quotes:</p>
+<div class="exampleback"> 
+  <h2>Example</h2>
+  <div class="example">
+  <p>  // Include the string library <br>
+#include<string> <br>
+// Create a string variable <br>
+string greeting = "Hello"; <br>
+// Output string value <br>
+cout << greeting;</p>
+  </div>
+  <div class="exoutput">
+    <h2>Output:</h2>
+    <p>Hello</p>
+  </div>
+</div>
+<p>You will learn more about strings, in our C++ <a href="Strings.html"><span>Strings</span></a> Chapter.</p>
+<div class="pbutton">
+ <button ><a href="User%20Input.html">Previous</a></button></div>
+<div class="button">
+ <button ><a href="Operators.html">Next</a></button></div>
+</div>
+</div>
+<footer>
+    <TR>
+      <TD CELLPADDING="10">
+        <B><MARQUEE DIRECTION="right" SCROLLAMOUNT="5"><FONT COLOR="#FFE863" SIZE="2">
+Copyright&copy;2020 FlamingBrain.
+</FONT></MARQUEE>
+      </TD>
+    </TR>
+<div>
+    <div class="border2"></div>
+    <div class="border1"></div>
+    <div> 
+<h3 > <ul class="sitemap">
+ <strong>Sitemap</strong>
+ <li ><a href="index.html"class="class1"><h3 class="linkcolor">Home</h3></a> </li> 
+<li><a href="learn.html"class="class1"><h3 class="linkcolor">Learn </h3></a> </li> 
+<li><a href="about.html"class="class1"><h3 class="linkcolor"> About </h3></a> </li> 
+</ul>
+</h3>
+</div>
+<div> 
+<h3 > <ul class="contactus">
+<strong>Contact Us</strong>
+<li > phone Number:011109222433</li> 
+<li>Email address:<a href="https://mail.google.com" ></a> <h3 class="linkcolor"> BrainFlamin@gmail.com </h3></li> 
+ </ul>
+</h3>
+</div>
+<div> 
+<h3 class="aboutus"> 
+<strong>About Us</strong>
+<p>  Flaming Brain is <br> 
+a web Devolpers site Provides<br>
+Programing languges courses for free.
+</p>
+</ul>
+</h3>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrays</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flaming.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+       <h2 class="logo"><img src="logo.jpg" height="70" width="100"></h2>
+        <nav>
+            <ul><li><a href="home.html">home</a></li>
+                <li><a href="learn.html">learn</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="coursename">
+<h1 >C++ Course</h1>
+</div>
+    </div>
+</header>
+<div class="flex">
+<div class="list" align="left">
+     <div class="listhead">
+     <ul style="list-style-type:none;">
+        <span > <li >Basics</li></span>
+     </ul>
+     </div>
+ 
+    <ul style="list-style-type:none;">
+   <a href="Syntax.html"><li>Syntax</li></a>
+   <a href="Output.html"><li>Output</li></a>
+   <a href="Comments.html"><li>Comments</li></a>
+   <a href="Variables.html"><li>Variables</li></a>
+   <a href="User%20Input.html"><li>User Input</li></a>
+   <a href="Data%20Types.html"><li>Data Types</li></a>
+   <a href="Operators.html"><li>Operators</li></a>
+   <a href="Strings.html"><li>Strings</li></a>
+   <a href="Math.html"><li>Math</li></a>
+   <a href="Booleans.html"><li>Booleans</li></a>
+   <a href="Conditions.html"><li>Conditions</li></a>
+   <a href="Switch.html"><li>Switch</li></a>
+   <a href="While%20Loop.html"><li>While Loop</li>    </a>
+   <a href="For%20Loop.html"><li>For Loop</li></a>
+   <a href="BreakContinue.html"><li>Break/Continue</li></a>
+   <a href="Arrays.html"><li>Arrays</li></a>
+   <a href="Refrences.html"><li>Refrences</li></a>
+   <a href="Pointers.html"><li>Pointers</li></a>
+</ul></div>
+<div class="design">
+<h1>Arrays</h1>
+<p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+<p>To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:</p>
+<div class="example"><p>string cars[4];</p></div>
+<p>We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:</p>
+<div class="example"><p>string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};</p></div>
+<p>To create an array of three integers, you could write:</p>
+<div class="example"><p>int myNum[3] = {10, 20, 30};</p></div>
+<h3>Access the Elements of an Array</h3>
+<p>You access an array element by referring to the index number.</p>
+<p>This statement accesses the value of the first element in cars:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+cout << cars[0];</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>Volvo</p>
+</div>
+</div>
+<p><span>Note:</span> Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p>
+<h3>Change an Array Element</h3>
+<p>To change the value of a specific element, refer to the index number:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+cars[0] = "Opel";<br>
+cout << cars[0];<br>
+// Now outputs Opel instead of Volvo
+</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>Opel</p>
+</div>
+</div>
+<h2>Arrays and Loops</h2>
+<h3>Loop Through an Array</h3>
+<p>You can loop through the array elements with the <span>for</span> loop.</p>
+<p>The following example outputs all elements in the cars array:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+for(int i = 0; i < 4; i++) {<br>
+  cout << cars[i] << "\n";<br>
+}
+</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>Volvo<br>
+BMW<br>
+Ford<br>
+Mazda</p>
+</div>
+</div>
+<p>The following example outputs the index of each element together with its value:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+for(int i = 0; i < 4; i++) {<br>
+  cout << i << ": " << cars[i] << "\n";<br>
+}</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>0: Volvo<br>
+1: BMW<br>
+2: Ford<br>
+3: Mazda</p>
+</div>
+</div>
+<h2>Omit Array Size</h2>
+<p>You don't have to specify the size of the array. But if you don't, it will only be as big as the elements that are inserted into it:</p>
+<div class="example"><p>string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3</p></div>
+<p>This is completely fine. However, the problem arise if you want extra space for future elements. Then you have to overwrite the existing values:</p>
+<div class="example"><p>string cars[] = {"Volvo", "BMW", "Ford"};<br>
+string cars[] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};</p></div>
+<p>If you specify the size however, the array will reserve the extra space:</p>
+<div class="example"><p>string cars[5] = {"Volvo", "BMW", "Ford"}; // size of array is 5, even though it's only three elements inside it</p></div>
+<p>Now you can add a fourth and fifth element without overwriting the others:</p>
+<div class="example"><p>cars[3] = {"Mazda"};<br>
+cars[4] = {"Tesla"};</p></div>
+<h3>Omit Elements on Declaration</h3>
+<p>It is also possible to declare an array without specifying the elements on declaration, and add them later:</p>
+<div class="exampleback">
+  <h2>Example</h2>
+  <div class="example">
+  <p>string cars[5];<br>
+  cars[0] = "Volvo";<br>
+  cars[1] = "BMW";<br>
+  cars[2] = "Ford";<br>
+  cars[3] = "Mazda";<br>
+  cars[4] = "Tesla";<br>
+  for(int i = 0; i < 5; i++) {<br>
+    cout << cars[i] << "\n";<br>
+  }</p>
+</div>
+<div class="exoutput">
+  <h2>Output</h2>
+  <p>Volvo<br>
+BMW<br>
+Ford<br>
+Mazda<br>
+Tesla</p>
+</div>
+</div>
+<div class="pbutton">
+ <button ><a href="BreakContinue.html">Previous</a></button></div>
+<div class="button">
+ <button ><a href="Refrences.html">Next</a></button></div>
+</div>
+</div>
+<footer>
+    <TR>
+      <TD CELLPADDING="10">
+        <B><MARQUEE DIRECTION="right" SCROLLAMOUNT="5"><FONT COLOR="#FFE863" SIZE="2">
+Copyright&copy;2020 FlamingBrain.
+</FONT></MARQUEE>
+      </TD>
+    </TR>
+<div>
+    <div class="border2"></div>
+    <div class="border1"></div>
+    <div> 
+<h3 > <ul class="sitemap">
+ <strong>Sitemap</strong>
+ <li ><a href="index.html"class="class1"><h3 class="linkcolor">Home</h3></a> </li> 
+<li><a href="learn.html"class="class1"><h3 class="linkcolor">Learn </h3></a> </li> 
+<li><a href="about.html"class="class1"><h3 class="linkcolor"> About </h3></a> </li> 
+</ul>
+</h3>
+</div>
+<div> 
+<h3 > <ul class="contactus">
+<strong>Contact Us</strong>
+<li > phone Number:011109222433</li> 
+<li>Email address:<a href="https://mail.google.com" ></a> <h3 class="linkcolor"> BrainFlamin@gmail.com </h3></li> 
+ </ul>
+</h3>
+</div>
+<div> 
+<h3 class="aboutus"> 
+<strong>About Us</strong>
+<p>  Flaming Brain is <br> 
+a web Devolpers site Provides<br>
+Programing languges courses for free.
+</p>
+</ul>
+</h3>
+</div>
+</div>
+</footer>
+</body>
+</html>
